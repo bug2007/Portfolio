@@ -1,0 +1,37 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --background-color: #16001c;
+    --light-color: #b237d4;
+}
+
+body {
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    color: var(--light-color);
+}
+
+.navbar-brand:hover {
+    color: var(--light-color);
+    filter: brightness(120%);
+}
+
+.nav-link {
+    color: var(--light-color);
+    border-bottom: 1px solid transparent;
+    font-size: 18px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--light-color);
+    filter: brightness(120%);
+    border-bottom-color: var(--light-color);
+}
